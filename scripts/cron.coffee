@@ -5,5 +5,5 @@ module.exports = (robot) ->
     start: true
     timeZone: "Asia/Tokyo"
     onTick: ->
-      console.log(prosess.env)
+      console.log(process.env)
       robot.send { message: { data: {room_id: process.env.ROOM_ID}}}, "朝会の時間です。"
