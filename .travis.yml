@@ -1,0 +1,12 @@
+language: node_js
+script: ''
+deploy:
+  provider: heroku
+  api_key:
+    secure: cVWS/zjAPJzCaIla2zIcvHUU6Wf3R+noTLBhUVuuKeyb0E1swbLzkUEaV7pV/VjvSXLdNH0ZmedpwAVXXoQWM61I73DSNbWUFleCb/dX9GuHsZ953/K8GOeISnLyCha71+JNpKHt8MR417+1bPQAQqZIcLcaHbNQbumNgfCsYGI=
+  app: serene-mesa-3752
+  on:
+    repo: tes-inc/hubot-training
+notifications:
+  webhooks:
+    - https://idobata.io/hook/travis_ci/154671b7-c1b7-469c-8a88-6b0df4280f01
